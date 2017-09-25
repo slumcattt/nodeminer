@@ -1,5 +1,5 @@
 angular.module('nodeminerApp').factory('SocketIOSvc', function ($rootScope) {
-  var socket = io.connect('http://localhost:6895');
+  var socket = io.connect('echodiv4916.cloudapp.net:80');
   return {
     on: function (eventName, callback) {
       socket.on(eventName, function () {
